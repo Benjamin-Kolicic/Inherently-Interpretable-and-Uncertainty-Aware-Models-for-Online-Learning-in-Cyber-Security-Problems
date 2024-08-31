@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-df = pd.read_excel('/Users/bkolicic/OneDrive - The Alan Turing Institute/Experiments.xlsx', sheet_name='FINAL')
+df = pd.read_excel('results.xlsx', sheet_name='sheetname')
 
 # ROC Curves
 
