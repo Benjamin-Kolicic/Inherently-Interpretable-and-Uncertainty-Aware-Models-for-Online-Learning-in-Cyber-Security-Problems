@@ -7,7 +7,7 @@ from sklearn.metrics import roc_curve, roc_auc_score
 
 device = "cuda" if torch.cuda.is_available() else "cpu"  # sets up running environment
 
-# DATA GENERATION
+
 
 def csv_to_matrix(file_path):
     matrix = []
@@ -18,14 +18,14 @@ def csv_to_matrix(file_path):
     return matrix
 
 # Example usage:
-file_path = '/Users/bkolicic/Documents/Cleaned Data.csv'  # Phishing Data
+file_path = 'datafile.csv'  # Phishing Data
 matrix = csv_to_matrix(file_path)
 
 
 
 # Load Labels
 # Specify the path to your labels file
-csv_file_path = '/Users/bkolicic/Documents/Intrusion Labels.csv'
+csv_file_path = 'featurelabels.csv'
 
 # Initialize an empty dictionary
 labels_hashmap = {}
