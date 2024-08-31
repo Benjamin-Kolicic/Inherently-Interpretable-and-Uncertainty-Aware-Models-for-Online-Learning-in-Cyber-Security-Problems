@@ -5,7 +5,6 @@ import csv
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import roc_curve, roc_auc_score
 
-# GENERATE DATA
 
 def csv_to_matrix(file_path):
     matrix = []
@@ -15,7 +14,7 @@ def csv_to_matrix(file_path):
             matrix.append([float(cell) for cell in row])
     return matrix
 
-file_path = '/Users/bkolicic/Documents/Cleaned Data.csv'
+file_path = 'datafile.csv'
 matrix = csv_to_matrix(file_path)
 
 matrix = np.array(matrix)
